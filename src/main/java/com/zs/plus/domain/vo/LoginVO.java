@@ -1,10 +1,13 @@
 package com.zs.plus.domain.vo;
 
+import com.zs.plus.validator.IsMobile;
+
 import javax.validation.constraints.NotNull;
 
 public class LoginVO {
   
   @NotNull
+  @IsMobile
   private String mobile;
   
   @NotNull
@@ -24,5 +27,13 @@ public class LoginVO {
   
   public void setPassword(String password) {
     this.password = password;
+  }
+  
+  @Override
+  public String toString() {
+    return "LoginVO{" +
+      "mobile='" + mobile + '\'' +
+      ", password='" + password + '\'' +
+      '}';
   }
 }

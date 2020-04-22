@@ -1,0 +1,7 @@
+###
+http://localhost:8080/app/user/redis/get?id=2
+
+###
+http://localhost:8080/app/user/login?mobile=13712341234&password=123
+
+###

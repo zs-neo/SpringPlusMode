@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface MUserDao {
   
-  @Select("select * from muser where id = #{id")
+  @Select("select * from muser where id = #{id}")
   public MUser getById(@Param("id") long id);
   
 }
