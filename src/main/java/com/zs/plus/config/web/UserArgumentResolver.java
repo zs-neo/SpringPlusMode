@@ -1,7 +1,6 @@
 package com.zs.plus.config.web;
 
-import com.zs.plus.config.prefix.MUserKey;
-import com.zs.plus.domain.MUser;
+import com.zs.plus.domain.po.MUser;
 import com.zs.plus.service.MUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;

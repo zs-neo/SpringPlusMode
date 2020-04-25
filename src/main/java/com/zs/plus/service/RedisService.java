@@ -65,6 +65,25 @@ public class RedisService {
   }
   
   /**
+   * 删除某个key
+   *
+   * @param prefix
+   * @param key
+   * @return
+   */
+  public boolean delete(KeyPrefix prefix, String key) {
+    Jedis jedis = null;
+    try {
+      jedis = jedisPool.getResource();
+      String realKey = prefix.getPrefix() + key;
+      long ret = jedis.del(realKey);
+      return ret > 0;
+    } finally {
+      returnToPool(jedis);
+    }
+  }
+  
+  /**
    * 判断key是否存在
    *
    * @param keyPrefix
@@ -130,7 +149,7 @@ public class RedisService {
    * @param <T>
    * @return
    */
-  private <T> String beanToString(T value) {
+  public <T> String beanToString(T value) {
     if (value == null) {
       return null;
     }
@@ -154,7 +173,7 @@ public class RedisService {
    * @param <T>
    * @return
    */
-  private <T> T stringToBean(String str, Class<T> clazz) {
+  public <T> T stringToBean(String str, Class<T> clazz) {
     if (str == null || str.length() <= 0 || clazz == null) {
       return null;
     }

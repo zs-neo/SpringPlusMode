@@ -3,7 +3,7 @@ package com.zs.plus.controller;
 import com.zs.plus.config.prefix.UserKey;
 import com.zs.plus.domain.CodeMsg;
 import com.zs.plus.domain.Result;
-import com.zs.plus.domain.User;
+import com.zs.plus.domain.po.User;
 import com.zs.plus.service.RedisService;
 import com.zs.plus.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

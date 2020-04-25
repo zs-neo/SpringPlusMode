@@ -3,7 +3,7 @@ package com.zs.plus.service;
 import com.zs.plus.config.prefix.MUserKey;
 import com.zs.plus.dao.MUserDao;
 import com.zs.plus.domain.CodeMsg;
-import com.zs.plus.domain.MUser;
+import com.zs.plus.domain.po.MUser;
 import com.zs.plus.domain.vo.LoginVO;
 import com.zs.plus.exception.GlobalException;
 import com.zs.plus.util.MD5Util;

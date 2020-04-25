@@ -1,5 +1,12 @@
 package com.zs.plus.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
 public class Result<T> {
   
   private int code;
@@ -13,7 +20,7 @@ public class Result<T> {
   }
   
   public Result(CodeMsg codeMsg) {
-    if(codeMsg == null){
+    if (codeMsg == null) {
       return;
     }
     this.code = codeMsg.getCode();
@@ -24,31 +31,8 @@ public class Result<T> {
     return new Result<T>(data);
   }
   
-  public static <T> Result<T> error(CodeMsg codeMsg){
+  public static <T> Result<T> error(CodeMsg codeMsg) {
     return new Result<T>(codeMsg);
   }
   
-  public int getCode() {
-    return code;
-  }
-  
-  public void setCode(int code) {
-    this.code = code;
-  }
-  
-  public String getMsg() {
-    return msg;
-  }
-  
-  public void setMsg(String msg) {
-    this.msg = msg;
-  }
-  
-  public T getData() {
-    return data;
-  }
-  
-  public void setData(T data) {
-    this.data = data;
-  }
 }

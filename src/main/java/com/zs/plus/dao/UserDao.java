@@ -1,6 +1,6 @@
 package com.zs.plus.dao;
 
-import com.zs.plus.domain.User;
+import com.zs.plus.domain.po.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;

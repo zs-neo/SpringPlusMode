@@ -1,9 +1,15 @@
 package com.zs.plus.domain.vo;
 
 import com.zs.plus.validator.IsMobile;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.validation.constraints.NotNull;
 
+@Getter
+@Setter
+@ToString
 public class LoginVO {
   
   @NotNull
@@ -13,27 +19,4 @@ public class LoginVO {
   @NotNull
   private String password;
   
-  public String getMobile() {
-    return mobile;
-  }
-  
-  public void setMobile(String mobile) {
-    this.mobile = mobile;
-  }
-  
-  public String getPassword() {
-    return password;
-  }
-  
-  public void setPassword(String password) {
-    this.password = password;
-  }
-  
-  @Override
-  public String toString() {
-    return "LoginVO{" +
-      "mobile='" + mobile + '\'' +
-      ", password='" + password + '\'' +
-      '}';
-  }
 }
