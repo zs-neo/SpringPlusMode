@@ -1,6 +1,6 @@
 package com.zs.plus.rabbitmq;
 
-import com.zs.plus.service.RedisService;
+import com.zs.plus.config.redis.RedisService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.AmqpTemplate;

@@ -1,4 +1,4 @@
-package com.zs.plus.service;
+package com.zs.plus.config.redis;
 
 import com.alibaba.fastjson.JSON;
 import com.zs.plus.config.prefix.KeyPrefix;

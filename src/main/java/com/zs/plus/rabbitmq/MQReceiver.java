@@ -1,12 +1,12 @@
 package com.zs.plus.rabbitmq;
 
+import com.zs.plus.config.redis.RedisService;
 import com.zs.plus.domain.po.MOrder;
 import com.zs.plus.domain.po.MUser;
 import com.zs.plus.domain.vo.GoodsVO;
 import com.zs.plus.service.GoodsService;
 import com.zs.plus.service.MService;
 import com.zs.plus.service.OrderService;
-import com.zs.plus.service.RedisService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;

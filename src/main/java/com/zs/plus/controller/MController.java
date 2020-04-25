@@ -1,6 +1,7 @@
 package com.zs.plus.controller;
 
 import com.zs.plus.config.prefix.GoodsKey;
+import com.zs.plus.config.redis.RedisService;
 import com.zs.plus.domain.CodeMsg;
 import com.zs.plus.domain.Result;
 import com.zs.plus.domain.po.MOrder;
@@ -8,7 +9,10 @@ import com.zs.plus.domain.po.MUser;
 import com.zs.plus.domain.vo.GoodsVO;
 import com.zs.plus.rabbitmq.MMessage;
 import com.zs.plus.rabbitmq.MQSender;
-import com.zs.plus.service.*;
+import com.zs.plus.service.GoodsService;
+import com.zs.plus.service.MService;
+import com.zs.plus.service.MUserService;
+import com.zs.plus.service.OrderService;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

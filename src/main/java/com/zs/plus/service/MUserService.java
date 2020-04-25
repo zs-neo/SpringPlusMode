@@ -1,6 +1,7 @@
 package com.zs.plus.service;
 
 import com.zs.plus.config.prefix.MUserKey;
+import com.zs.plus.config.redis.RedisService;
 import com.zs.plus.dao.MUserDao;
 import com.zs.plus.domain.CodeMsg;
 import com.zs.plus.domain.po.MUser;

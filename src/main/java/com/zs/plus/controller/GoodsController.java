@@ -1,12 +1,12 @@
 package com.zs.plus.controller;
 
+import com.zs.plus.config.redis.RedisService;
 import com.zs.plus.domain.Result;
 import com.zs.plus.domain.po.MUser;
 import com.zs.plus.domain.vo.GoodsVO;
 import com.zs.plus.domain.vo.MVO;
 import com.zs.plus.service.GoodsService;
 import com.zs.plus.service.MUserService;
-import com.zs.plus.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
